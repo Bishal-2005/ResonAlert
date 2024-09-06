@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Notification</title>
+    <style>
+        /* Emergency Notification Box Styling */
+        .emergency-notification {
+            background-color: #d9534f; /* Red background for urgency */
+            color: white;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            animation: blink 1s linear infinite alternate; /* Add blinking effect for extra attention */
+        }
+
+        .emergency-notification .message {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .emergency-notification .details {
+            font-size: 16px;
+            align-items: center;
+        }
+
+        /* Close button styling */
+        .emergency-notification button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: white;
+            position: sticky;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .emergency-notification button:hover {
+            color: #ffcccc;
+        }
+
+        /* Blinking effect keyframes */
+        @keyframes blink {
+            0% { background-color: #d9534f; }
+            100% { background-color: #c9302c; } /* Slightly darker red for blinking effect */
+        }
+
+        /* Smooth closing animation */
+        .hidden {
+            opacity: 0;
+            top: -100px;
+            transition: opacity 0.3s ease, top 0.3s ease;
+        }
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Emergency Notification -->
+    <div class="emergency-notification" id="emergencyNotification">
+        <div class="message">🚨 Emergency Alert 🚨</div>
+        <div class="details">
+          
+
+
+
+ 
+
+
+        </div>
+        <button onclick="closeNotification()"></button>
+    </div>
+
+    <script>
+        // Function to hide the emergency notification
+        function closeNotification() {
+            var notification = document.getElementById("emergencyNotification");
+            notification.classList.add("hidden");
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 300); // Allow time for the transition to complete
+        }
+    </script>
+
+    <!-- Main content of the page -->
+    <div class="content">
+        <h2>1.Personal Emergency:</h2>
+            <p><b>"HELP - I'm in a life-threatening situation. Please call 112 and send help to [location]."</b></p><br>
+            
+            
+            
+           <h2> 2. Missing Person Alert:</h2>
+           <p><b>"MISSING PERSON - [Name] last seen at [location]. If found, contact [number] immediately."</b></p><br>
+            
+            <h2>3. Fire Alert:</h2>
+                <p><b>"FIRE EVACUATION - Please exit the building immediately and proceed to the designated assembly point."</b></p>
+        
+    </div>
+
+</body>
+</html>

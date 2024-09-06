@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Content Boxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(digital-circle-circuit-blue-background-futuristic-technology.jpg);
+        }
+
+        .container {
+            display: flex;
+            
+            margin-top: 50px;
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            border-radius: 200px;
+            box-shadow: 0 10px 20px blue;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content-box {
+            background-color: gainsboro;
+            border: 5px solid red;
+            
+            padding: 20px;
+            margin: 100px;
+            width: 300px;
+            height: 400px;
+            
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            height: 300px;
+        }
+
+        video {
+            width: 30%;
+            height: 300px;
+            border: 10px solid #333;
+        }
+        @keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+        h2 {
+            text-align: center;
+            color: brown;
+        }
+        h3{
+            color: red;
+        }
+
+        p {
+            text-align: justify;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-box">
+            <h2 >SMART VOICE SENSOR<hr></h2>
+            <p><b> <h3>Definition :</h3> Advanced sensors that recognize specific voice patterns or 
+                keywords in real-time.<br>
+
+<h3> Technology: </h3>Utilizes AI, machine learning, and natural language 
+                  processing to detect distress signals.<br> </b>
+</p>
+        </div>
+        
+        <div class="content-box">
+            <h2>FEATURES OF RESONALERT<hr></h2>
+            <p><b><h3>Voice Recognition Technology </h3>
+                • Detects distress words like “help,” “stop,” or “no”.<br>
+                • Recognizes unusual sound patterns indicating struggle or panic. 
+               <h3> Real-Time Alert System </h3>
+                • Automatically sends alerts to pre-configured contacts or emergency services.<br> 
+                • Provides live location tracking and a continuous audio stream.
+                 </b> </p>
+        </div>
+
+        <div class="content-box">
+            <h2>USE CASE AND IMPACT<hr></h2>
+            <p><b><h3>Personal Safety </h3>
+                 • Women’s safety against rape or assault. <br>
+                • Children protection against bullying and kidnapping. 
+                <h3>Public Safety</h3> 
+                • Use in public places to detect and respond to accidents or assaults. <br>
+                • Integration with public transportation systems to ensure passenger safety. </b></p>
+        </div>
+        
+        
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="vedio5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    
+
+</body>
+</html>

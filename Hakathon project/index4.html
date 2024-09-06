@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Connection Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .connect-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .connect-button:hover {
+            background-color: #218838;
+        }
+
+        .device-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Connect Your Device</h1>
+
+        <!-- Device Status -->
+        <div class="status">No Device Connected</div>
+
+        <!-- Connect Button -->
+        <button class="connect-button" disabled>Connect Device</button>
+
+        <!-- Device Information -->
+        <div class="device-info">
+            <p>Device Info: N/A</p>
+        </div>
+    </div>
+
+</body>
+</html>
